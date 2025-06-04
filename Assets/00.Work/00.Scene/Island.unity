@@ -426,10 +426,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildPrefabs:
   - {fileID: 7609678088210976751, guid: 1e10f88eeb3334942b24fa1de9bf87be, type: 3}
+  mapGrid: {fileID: 2032684918}
   buildableLayer:
     serializedVersion: 2
     m_Bits: 64
-  floorObject: {fileID: 705752561}
   validMaterial: {fileID: 2100000, guid: 335784105d754af428910e889b970421, type: 2}
   invalidMaterial: {fileID: 2100000, guid: b3ed5caf529ab9847a2ab6fa13b37607, type: 2}
 --- !u!4 &957401377
@@ -824,15 +824,60 @@ Transform:
   - {fileID: 203447028}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2032684917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2032684919}
+  - component: {fileID: 2032684918}
+  m_Layer: 0
+  m_Name: Grid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!156049354 &2032684918
+Grid:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032684917}
+  m_Enabled: 1
+  m_CellSize: {x: 1, y: 1, z: 1}
+  m_CellGap: {x: 0, y: 0, z: 0}
+  m_CellLayout: 0
+  m_CellSwizzle: 0
+--- !u!4 &2032684919
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032684917}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1108239405}
   - {fileID: 1603551651}
-  - {fileID: 957401377}
   - {fileID: 705752565}
   - {fileID: 1453005019}
   - {fileID: 1173201069}
   - {fileID: 1334033583}
   - {fileID: 249434593}
+  - {fileID: 2032684919}
+  - {fileID: 957401377}

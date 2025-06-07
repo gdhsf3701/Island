@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a3484a5ccb4116c468be12295bc96bea
+timeCreated: 1486897106
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/Green/goblin_leader.prefab
+  uploadId: 449677

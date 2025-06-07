@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 81bc03a5a95b27b448f1f1af289c282f
+timeCreated: 1486897168
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/White/cow.prefab
+  uploadId: 449677

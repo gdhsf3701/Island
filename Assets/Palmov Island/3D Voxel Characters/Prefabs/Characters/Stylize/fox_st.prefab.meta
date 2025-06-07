@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5bb9aef8e45d839469399fc2e1d8db47
+timeCreated: 1486897144
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/Stylize/fox_st.prefab
+  uploadId: 449677

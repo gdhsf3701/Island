@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3e32c8894dbe75a4aa5f0b9e7a3a9e53
+timeCreated: 1486897168
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/White/bird.prefab
+  uploadId: 449677

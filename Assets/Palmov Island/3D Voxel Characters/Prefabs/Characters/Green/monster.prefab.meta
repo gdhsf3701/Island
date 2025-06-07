@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 218813b8e9fd67a4b836050d484bd1f8
+timeCreated: 1486897106
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/Green/monster.prefab
+  uploadId: 449677

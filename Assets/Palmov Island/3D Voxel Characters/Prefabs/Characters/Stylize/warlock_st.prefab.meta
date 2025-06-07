@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c0a04c21d32ad1e44920299efff3f6f5
+timeCreated: 1486897149
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/Stylize/warlock_st.prefab
+  uploadId: 449677

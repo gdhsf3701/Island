@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 005742658dc379344975505bef649c91
+timeCreated: 1486897146
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/Stylize/thief_st.prefab
+  uploadId: 449677

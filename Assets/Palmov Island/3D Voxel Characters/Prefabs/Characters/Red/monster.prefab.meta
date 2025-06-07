@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d76ca6414fb9a294aa64aaf89737b5fe
+timeCreated: 1486897123
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/Red/monster.prefab
+  uploadId: 449677

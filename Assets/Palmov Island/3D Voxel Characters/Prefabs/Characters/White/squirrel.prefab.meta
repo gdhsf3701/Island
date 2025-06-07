@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c8bc577503b9569478fd01d61f4af75b
+timeCreated: 1486897167
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/White/squirrel.prefab
+  uploadId: 449677

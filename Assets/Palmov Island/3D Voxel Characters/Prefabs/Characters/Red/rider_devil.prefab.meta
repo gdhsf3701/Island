@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 048e3e93c1368c34cac525da04e9adae
+timeCreated: 1486897124
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/Red/rider_devil.prefab
+  uploadId: 449677

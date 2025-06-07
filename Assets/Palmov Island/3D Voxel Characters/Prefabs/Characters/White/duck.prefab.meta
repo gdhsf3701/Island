@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 73b6493c4858b2f4cb47dab6d8243e77
+timeCreated: 1486897167
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/White/duck.prefab
+  uploadId: 449677

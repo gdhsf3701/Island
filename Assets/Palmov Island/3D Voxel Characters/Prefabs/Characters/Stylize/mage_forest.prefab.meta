@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d7397b87ca4216d418db680bccb2b4ce
+timeCreated: 1486897147
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/Stylize/mage_forest.prefab
+  uploadId: 449677

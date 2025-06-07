@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c158ddc4528ccf946a7288c84b81cc5d
+timeCreated: 1486897106
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/Green/spider.prefab
+  uploadId: 449677

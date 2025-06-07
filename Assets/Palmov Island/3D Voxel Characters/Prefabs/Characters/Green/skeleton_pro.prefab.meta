@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e181571ecdd7dec4ba28d5984dfd03ee
+timeCreated: 1486897106
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/Green/skeleton_pro.prefab
+  uploadId: 449677

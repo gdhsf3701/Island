@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a9936382b9be29e4f9ee88fb12068c51
+timeCreated: 1486897123
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/Red/druid_from_hell.prefab
+  uploadId: 449677

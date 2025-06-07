@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c8523527c2f85ec4eb26062de690d51e
+timeCreated: 1486897105
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 201723
+  packageName: 3D Voxel Characters
+  packageVersion: 1.0.0
+  assetPath: Assets/Palmov Island/3D Voxel Characters/Prefabs/Characters/Green/goblin_barbarian.prefab
+  uploadId: 449677

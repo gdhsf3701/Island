@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5330061512680107506}
   - component: {fileID: 3729261335790338859}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 4276354039934757718}
   - component: {fileID: 8275033930831746286}
   - component: {fileID: 2408260699701778360}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shape
   m_TagString: Untagged
   m_Icon: {fileID: 0}

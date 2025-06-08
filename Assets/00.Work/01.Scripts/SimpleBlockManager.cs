@@ -153,7 +153,7 @@ namespace _00.Work._01.Scripts
         if (Physics.Raycast(ray, out RaycastHit hit, 100f, buildableLayer))
         {
             Vector3Int baseCell = mapGrid.WorldToCell(hit.point);
-            Vector3Int targetCell = GetValidBuildPosition(baseCell, hit.normal);
+            Vector3Int targetCell = baseCell; // 히트한 지점을 그대로 사용
             Vector3 cellCenter = mapGrid.GetCellCenterWorld(targetCell);
             
             currentPreview.transform.position = cellCenter;
@@ -170,44 +170,6 @@ namespace _00.Work._01.Scripts
                 PlaceBlock(targetCell, blockComponent);
             }
         }
-    }
-    
-    Vector3Int GetValidBuildPosition(Vector3Int baseCell, Vector3 hitNormal)
-    {
-        // 히트 노멀을 기반으로 인접한 셀 찾기
-        Vector3Int adjacentCell = baseCell;
-        
-        // 노멀 벡터를 기반으로 방향 결정
-        if (Mathf.Abs(hitNormal.x) > 0.5f)
-        {
-            // X축 방향 (좌우)
-            adjacentCell.x += hitNormal.x > 0 ? 1 : -1;
-        }
-        else if (Mathf.Abs(hitNormal.y) > 0.5f)
-        {
-            // Y축 방향 (위아래)
-            adjacentCell.y += hitNormal.y > 0 ? 1 : -1;
-        }
-        else if (Mathf.Abs(hitNormal.z) > 0.5f)
-        {
-            // Z축 방향 (앞뒤)
-            adjacentCell.z += hitNormal.z > 0 ? 1 : -1;
-        }
-        
-        // 해당 위치가 비어있으면 그대로 반환
-        if (!occupiedCells.Contains(adjacentCell))
-        {
-            return adjacentCell;
-        }
-        
-        // 만약 해당 위치도 차있다면, 기존 로직처럼 위로 쌓기
-        Vector3Int targetCell = adjacentCell;
-        while (occupiedCells.Contains(targetCell))
-        {
-            targetCell.y += 1;
-        }
-        
-        return targetCell;
     }
     
     bool HasEnoughResources(IBlock block)

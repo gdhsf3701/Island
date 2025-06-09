@@ -1,0 +1,496 @@
+fileFormatVersion: 2
+guid: e97151d2ca79c15498ddec7a7a29aa90
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_01
+    second: {fileID: 2100000, guid: 2edee459187256441be169562cbf181e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_01.004
+    second: {fileID: 2100000, guid: e35226c380a373a42b442bdfeb0bd3c4, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: NPC_characters(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: 9.313226e-10, z: 0}
+      rotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: stickman:Hips
+      parentName: Armature
+      position: {x: -0.0028632735, y: 1.0305734, z: 0.006306561}
+      rotation: {x: -0.00000005960466, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: stickman:Spine
+      parentName: stickman:Hips
+      position: {x: -0, y: 0.14104362, z: -0.014240997}
+      rotation: {x: -0.05029266, y: -0, z: -0, w: 0.99873453}
+      scale: {x: 1, y: 1, z: 1}
+    - name: stickman:Spine1
+      parentName: stickman:Spine
+      position: {x: 2.9802322e-10, y: 0.16538766, z: -0.0000000023841857}
+      rotation: {x: 0.000000018626451, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 0.99999815, z: 0.99999815}
+    - name: stickman:Spine2
+      parentName: stickman:Spine1
+      position: {x: 2.9802322e-10, y: 0.18901427, z: -0.0000000047683715}
+      rotation: {x: -0.000000029802322, y: 3.5756283e-11, z: -7.10064e-10, w: 1}
+      scale: {x: 1, y: 0.999999, z: 0.999999}
+    - name: stickman:Neck
+      parentName: stickman:Spine2
+      position: {x: 2.1252212e-10, y: 0.21264108, z: 0.0000000047681668}
+      rotation: {x: 0.05029267, y: -4.1633363e-17, z: 7.109638e-10, w: 0.99873453}
+      scale: {x: 1, y: 0.9999988, z: 0.9999988}
+    - name: stickman:Head
+      parentName: stickman:Neck
+      position: {x: -2.980232e-10, y: 0.13287811, z: 0.005991859}
+      rotation: {x: -0, y: 3.4650563e-18, z: 1.9193653e-18, w: 1}
+      scale: {x: 1, y: 0.99999976, z: 0.99999976}
+    - name: stickman:HeadTop_End
+      parentName: stickman:Head
+      position: {x: 1.6653345e-18, y: 0.93838865, z: 0.042314794}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 0.9999998, z: 0.9999998}
+    - name: stickman:HeadTop_End_end
+      parentName: stickman:HeadTop_End
+      position: {x: -0, y: 0.9393423, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: stickman:LeftShoulder
+      parentName: stickman:Spine2
+      position: {x: -0.10090386, y: 0.18230005, z: -0.0021749448}
+      rotation: {x: 0.55621463, y: -0.43297666, z: 0.5675518, w: 0.42548978}
+      scale: {x: 1.0000027, y: 1.0000112, z: 1.0000072}
+    - name: stickman:LeftArm
+      parentName: stickman:LeftShoulder
+      position: {x: 0.000000004172325, y: 0.21139623, z: 0.000000064969065}
+      rotation: {x: -0.098558396, y: -0.001892328, z: -0.003135651, w: 0.9951246}
+      scale: {x: 1.0000101, y: 1.0000105, z: 1.000007}
+    - name: stickman:LeftForeArm
+      parentName: stickman:LeftArm
+      position: {x: 0.000000009536743, y: 0.38969395, z: 0.00000014543534}
+      rotation: {x: 0.0042093094, y: -0.000119919176, z: -0.024093801, w: 0.99970084}
+      scale: {x: 0.99998856, y: 0.9999872, z: 0.999989}
+    - name: stickman:LeftHand
+      parentName: stickman:LeftForeArm
+      position: {x: 0.0000000023841857, y: 0.43744224, z: 0.00000005483627}
+      rotation: {x: 0.074952014, y: 0.008284418, z: 0.06270392, w: 0.99517936}
+      scale: {x: 0.99999696, y: 1.0000066, z: 0.999988}
+    - name: stickman:LeftHandIndex1
+      parentName: stickman:LeftHand
+      position: {x: -0.000000023841856, y: 0.024934381, z: -0.000000023841856}
+      rotation: {x: -0.06232704, y: 0.00248906, z: -0.03983152, w: 0.99725753}
+      scale: {x: 1.0000001, y: 0.99998, z: 1.0000126}
+    - name: stickman:LeftHandIndex2
+      parentName: stickman:LeftHandIndex1
+      position: {x: 0.000000023841856, y: 0.07041015, z: 0.00000013947486}
+      rotation: {x: -0.0000009573997, y: 0.00000025494958, z: 0.000000021769667, w: 1}
+      scale: {x: 0.9999994, y: 1.000001, z: 1.0000002}
+    - name: stickman:LeftHandIndex3
+      parentName: stickman:LeftHandIndex2
+      position: {x: -0.005891838, y: 0.08014364, z: -0.0033130478}
+      rotation: {x: 0.00000073388225, y: -0.00000030873343, z: -0.000000036059756, w: 1}
+      scale: {x: 0.9999925, y: 0.999987, z: 0.99999565}
+    - name: stickman:LeftHandIndex3_end
+      parentName: stickman:LeftHandIndex3
+      position: {x: -0, y: 0.022344846, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: stickman:RightShoulder
+      parentName: stickman:Spine2
+      position: {x: 0.10090386, y: 0.18247768, z: -0.0039341305}
+      rotation: {x: -0.55090934, y: -0.43710712, z: 0.57196885, w: -0.42224148}
+      scale: {x: 1.0000046, y: 1.0000037, z: 1.0000012}
+    - name: stickman:RightArm
+      parentName: stickman:RightShoulder
+      position: {x: -0.0000000166893, y: 0.21139623, z: -0.00000010728836}
+      rotation: {x: -0.09754072, y: 0.00056903064, z: 0.009757757, w: 0.9951836}
+      scale: {x: 1.000003, y: 1.0000031, z: 0.9999999}
+    - name: stickman:RightForeArm
+      parentName: stickman:RightArm
+      position: {x: -0, y: 0.3894858, z: 0.000000039339064}
+      rotation: {x: 0.0052251876, y: 0.000098354045, z: 0.017486367, w: 0.99983346}
+      scale: {x: 1.0000001, y: 0.9999973, z: 0.99999666}
+    - name: stickman:RightHand
+      parentName: stickman:RightForeArm
+      position: {x: 0.0000000023841857, y: 0.43744162, z: 0.00000017881393}
+      rotation: {x: -0.06001271, y: -0.005546915, z: -0.09186365, w: -0.9939461}
+      scale: {x: 1.0000014, y: 1.0000083, z: 0.9999939}
+    - name: stickman:RightHandIndex1
+      parentName: stickman:RightHand
+      position: {x: -0, y: 0.034661707, z: -0.000000013709068}
+      rotation: {x: 0.029882507, y: -0.0020032085, z: 0.06686388, w: -0.99731255}
+      scale: {x: 1.0000179, y: 1.0000087, z: 1.0000175}
+    - name: stickman:RightHandIndex2
+      parentName: stickman:RightHandIndex1
+      position: {x: 0.0000000047683715, y: 0.068199486, z: 0.000000017881392}
+      rotation: {x: -0.00024882142, y: 0.00000066705974, z: -0.014277674, w: 0.9998981}
+      scale: {x: 0.9999917, y: 0.9999972, z: 0.9999997}
+    - name: stickman:RightHandIndex3
+      parentName: stickman:RightHandIndex2
+      position: {x: -0.00841089, y: 0.075944446, z: 0.00014594496}
+      rotation: {x: 0.00024857456, y: -0.00000007733198, z: 0.014278851, w: 0.9998981}
+      scale: {x: 0.9999936, y: 0.99999803, z: 0.9999955}
+    - name: stickman:RightHandIndex3_end
+      parentName: stickman:RightHandIndex3
+      position: {x: -0, y: 0.0252026, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: stickman:LeftUpLeg
+      parentName: stickman:Hips
+      position: {x: -0.18107374, y: -0.07842651, z: -0.0045503955}
+      rotation: {x: -0.0001286003, y: 0.004815212, z: 0.99976736, w: 0.021024032}
+      scale: {x: 1.0000007, y: 0.9999999, z: 1}
+    - name: stickman:LeftLeg
+      parentName: stickman:LeftUpLeg
+      position: {x: 0.0000000026312772, y: 0.41298488, z: -2.8521754e-10}
+      rotation: {x: -0.027418487, y: -0.0005419859, z: 0.017992599, w: 0.999462}
+      scale: {x: 1.0000043, y: 0.99999744, z: 0.9999999}
+    - name: stickman:LeftFoot
+      parentName: stickman:LeftLeg
+      position: {x: 1.7571437e-11, y: 0.31149566, z: 0.0000000025751068}
+      rotation: {x: 0.4356838, y: 0.002294421, z: -0.0011226551, w: 0.9000962}
+      scale: {x: 1.0000043, y: 1.000001, z: 1.0000012}
+    - name: stickman:LeftToeBase
+      parentName: stickman:LeftFoot
+      position: {x: 0.000000026933849, y: 0.32264417, z: -0.00000008879229}
+      rotation: {x: 0.3494286, y: 0.0018210923, z: -0.0006784589, w: 0.93696105}
+      scale: {x: 1.000009, y: 0.9999827, z: 1.0000336}
+    - name: stickman:LeftToe_End
+      parentName: stickman:LeftToeBase
+      position: {x: -0.00000003044959, y: 0.14460085, z: 0.000000047590582}
+      rotation: {x: 0.000000059604638, y: 0.00000047439238, z: -0.0000000010477378, w: 1}
+      scale: {x: 1.0000209, y: 1.0000075, z: 1.0000072}
+    - name: stickman:LeftToe_End_end
+      parentName: stickman:LeftToe_End
+      position: {x: -0, y: 0.14460082, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: stickman:RightUpLeg
+      parentName: stickman:Hips
+      position: {x: 0.18107374, y: -0.07842651, z: -0.004765089}
+      rotation: {x: 0.000103817685, y: 0.006129971, z: 0.9997602, w: -0.021023564}
+      scale: {x: 1.0000052, y: 1.000009, z: 1}
+    - name: stickman:RightLeg
+      parentName: stickman:RightUpLeg
+      position: {x: -0.000000021391024, y: 0.41299665, z: 6.2631444e-10}
+      rotation: {x: -0.030518752, y: 0.000526237, z: -0.017990772, w: 0.9993722}
+      scale: {x: 1.0000224, y: 1.0000223, z: 1.0000001}
+    - name: stickman:RightFoot
+      parentName: stickman:RightLeg
+      position: {x: -0.0000000062786056, y: 0.31154808, z: -0.0000000019324944}
+      rotation: {x: 0.4335387, y: -0.0023124935, z: 0.0011161774, w: 0.9011313}
+      scale: {x: 0.99999577, y: 0.9999857, z: 1.0000048}
+    - name: stickman:RightToeBase
+      parentName: stickman:RightFoot
+      position: {x: 0.000000032484532, y: 0.31958467, z: 0.00000003095716}
+      rotation: {x: 0.35332775, y: -0.0017582243, z: 0.0006638666, w: 0.9354977}
+      scale: {x: 1.0000092, y: 1.0003003, z: 0.9997197}
+    - name: stickman:RightToe_End
+      parentName: stickman:RightToeBase
+      position: {x: -0.000000019106082, y: 0.14420629, z: 0.0000000140257175}
+      rotation: {x: -0.000000059604645, y: 4.656613e-10, z: 6.4028427e-10, w: 1}
+      scale: {x: 1.0000137, y: 0.99999636, z: 0.99999994}
+    - name: stickman:RightToe_End_end
+      parentName: stickman:RightToe_End
+      position: {x: -0, y: 0.14420629, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: body_01
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: hat_01
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: beard_01
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: eyes_01
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: mouth_01
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: belt_01
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: eyes_02
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: mouth_02
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: body_first_skin
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: eyes_03
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: mouth_03
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: belt_02
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: mouth_04
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: mouth_05
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: eyes_04
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: eyes_05
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: eyes_06
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: mouth_06
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: body_02
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: mouth_07
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: eyes_07
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: mouth_08
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: body_03
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: beard_02
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: body_04
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: beard_03
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: lifeline
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: body_terrorist
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: body_cow
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: body_alien
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Baseball_bat
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: body_terrorist_2
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: body_aboriginal
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Spear
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: body_aboriginal_2
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: AK47.001
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: body_sheep
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: bottle
+      parentName: NPC_characters(Clone)
+      position: {x: -0, y: -2.4815418e-23, z: -2.646978e-23}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

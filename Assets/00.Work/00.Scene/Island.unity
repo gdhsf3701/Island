@@ -431,6 +431,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: frog_st
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 0b8d833cd4cf20349a0768cc6c9e92d6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 0b8d833cd4cf20349a0768cc6c9e92d6, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.02
@@ -1143,13 +1147,21 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 4294967295
+  useSmartObstacleDetection: 1
+  debugRaycast: 1
   validPreviewMaterial: {fileID: 2100000, guid: 335784105d754af428910e889b970421, type: 2}
   invalidPreviewMaterial: {fileID: 2100000, guid: b3ed5caf529ab9847a2ab6fa13b37607, type: 2}
   noResourcePreviewMaterial: {fileID: 2100000, guid: b3ed5caf529ab9847a2ab6fa13b37607, type: 2}
   resourceDisplayText: {fileID: 1794474984}
-  collisionCheckRadius: 0.01
+  collisionCheckRadius: 0.19
   useBoxCollisionCheck: 0
   collisionBoxSize: {x: 0.9, y: 0.9, z: 0.9}
+  buildingCamera: {fileID: 203447027}
+  raycastDistance: 100
+  gridOffset: {x: 0, y: 0, z: 0}
+  raycastTolerance: 0.1
+  useClosestHit: 1
+  gridSnapTolerance: 0.05
 --- !u!4 &1882520114
 Transform:
   m_ObjectHideFlags: 0
@@ -1178,7 +1190,7 @@ GameObject:
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1203,7 +1215,7 @@ Transform:
   m_GameObject: {fileID: 2032684917}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 3.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

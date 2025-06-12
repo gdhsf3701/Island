@@ -9,10 +9,19 @@ namespace _00.Work._01.Scripts
     [System.Serializable]
     public class ResourceManager
     {
-        public event Action OnResourcesChanged;
+        public event Action<int, int> OnResourcesChanged; // (current, max)
+        public event Action<string> OnResourcesLow; // blockName
+        public event Action<string, bool> OnResourceAvailabilityChanged; // (blockName, available)
         
         private Dictionary<string, int> resources = new Dictionary<string, int>();
+        private Dictionary<string, int> maxResources = new Dictionary<string, int>();
         private Dictionary<string, int> dailyUsage = new Dictionary<string, int>();
+        private Dictionary<string, int> blockCosts = new Dictionary<string, int>();
+        
+        private const int INITIAL_RESOURCES = 10;
+        private const int DAILY_REFILL = 5;
+        private const float USAGE_BONUS_MULTIPLIER = 1.5f;
+        private const int LOW_RESOURCE_THRESHOLD = 3;
         
         public ResourceManager(GameObject[] blockPrefabs)
         {
@@ -26,10 +35,17 @@ namespace _00.Work._01.Scripts
                 var block = prefab.GetComponent<IBlock>();
                 if (block != null)
                 {
-                    resources[block.BlockName] = 5;
-                    dailyUsage[block.BlockName] = 0;
+                    string blockName = block.BlockName;
+                    int cost = block.ResourceCost;
+                    
+                    resources[blockName] = INITIAL_RESOURCES;
+                    maxResources[blockName] = INITIAL_RESOURCES * 3; // 최대 3배까지 저장 가능
+                    dailyUsage[blockName] = 0;
+                    blockCosts[blockName] = cost;
                 }
             }
+            
+            OnResourcesChanged?.Invoke(GetTotalResources(), GetTotalMaxResources());
         }
         
         public bool HasEnoughResources(IBlock block)
@@ -40,30 +56,56 @@ namespace _00.Work._01.Scripts
         
         public void ConsumeResources(IBlock block)
         {
+            string blockName = block.BlockName;
+            int cost = block.ResourceCost;
+            
             if (HasEnoughResources(block))
             {
-                resources[block.BlockName] -= block.ResourceCost;
-                dailyUsage[block.BlockName] += block.ResourceCost;
-                OnResourcesChanged?.Invoke();
+                resources[blockName] -= cost;
+                dailyUsage[blockName] += cost;
+                
+                // 자원 부족 알림
+                if (resources[blockName] <= LOW_RESOURCE_THRESHOLD)
+                {
+                    OnResourcesLow?.Invoke(blockName);
+                }
+                
+                // 자원 가용성 변경 알림
+                if (resources[blockName] < cost)
+                {
+                    OnResourceAvailabilityChanged?.Invoke(blockName, false);
+                }
+                
+                OnResourcesChanged?.Invoke(GetTotalResources(), GetTotalMaxResources());
             }
         }
         
         public void RefillResources()
         {
-            // 사용량에 따른 보상 지급
-            foreach (var usage in dailyUsage.ToList())
+            foreach (var kvp in resources.ToList())
             {
-                if (usage.Value > 0)
+                string blockName = kvp.Key;
+                int currentAmount = kvp.Value;
+                int maxAmount = maxResources[blockName];
+                
+                // 기본 보충
+                int refillAmount = DAILY_REFILL;
+                
+                // 사용량 보너스
+                if (dailyUsage.ContainsKey(blockName) && dailyUsage[blockName] > 0)
                 {
-                    int refillAmount = Mathf.CeilToInt(usage.Value * 1.3f);
-                    resources[usage.Key] += refillAmount;
+                    int usageBonus = Mathf.CeilToInt(dailyUsage[blockName] * USAGE_BONUS_MULTIPLIER);
+                    refillAmount += usageBonus;
                 }
-            }
-            
-            // 기본 보충
-            foreach (var key in resources.Keys.ToList())
-            {
-                resources[key] += 5;
+                
+                // 최대치 제한
+                resources[blockName] = Mathf.Min(currentAmount + refillAmount, maxAmount);
+                
+                // 자원 가용성 변경 알림
+                if (currentAmount < blockCosts[blockName] && resources[blockName] >= blockCosts[blockName])
+                {
+                    OnResourceAvailabilityChanged?.Invoke(blockName, true);
+                }
             }
             
             // 사용량 초기화
@@ -72,26 +114,77 @@ namespace _00.Work._01.Scripts
                 dailyUsage[key] = 0;
             }
             
-            OnResourcesChanged?.Invoke();
-            Debug.Log("📦 자원 보충 완료!");
+            OnResourcesChanged?.Invoke(GetTotalResources(), GetTotalMaxResources());
         }
         
-        public string GetResourceDisplayText()
+        public int GetResourceAmount(string blockName)
         {
-            string displayText = "=== 보유 자원 ===\n";
+            return resources.ContainsKey(blockName) ? resources[blockName] : 0;
+        }
+        
+        public int GetResourceCost(string blockName)
+        {
+            return blockCosts.ContainsKey(blockName) ? blockCosts[blockName] : 0;
+        }
+        
+        public int GetTotalResources()
+        {
+            return resources.Sum(kvp => kvp.Value);
+        }
+        
+        public int GetTotalMaxResources()
+        {
+            return maxResources.Sum(kvp => kvp.Value);
+        }
+        
+        public float GetResourceRatio()
+        {
+            int total = GetTotalResources();
+            int max = GetTotalMaxResources();
+            return max > 0 ? (float)total / max : 0f;
+        }
+        
+        public Dictionary<string, ResourceInfo> GetAllResourceInfo()
+        {
+            var result = new Dictionary<string, ResourceInfo>();
             
-            foreach (var resource in resources)
+            foreach (var kvp in resources)
             {
-                int usage = dailyUsage.ContainsKey(resource.Key) ? dailyUsage[resource.Key] : 0;
-                displayText += $"{resource.Key}: {resource.Value}개";
-                if (usage > 0)
+                string blockName = kvp.Key;
+                result[blockName] = new ResourceInfo
                 {
-                    displayText += $" (오늘 사용: {usage})";
-                }
-                displayText += "\n";
+                    current = kvp.Value,
+                    max = maxResources[blockName],
+                    cost = blockCosts[blockName],
+                    dailyUsage = dailyUsage[blockName],
+                    canAfford = kvp.Value >= blockCosts[blockName]
+                };
             }
             
-            return displayText;
+            return result;
         }
+        
+        public bool IsResourceLow(string blockName)
+        {
+            return GetResourceAmount(blockName) <= LOW_RESOURCE_THRESHOLD;
+        }
+        
+        public List<string> GetLowResources()
+        {
+            return resources.Where(kvp => kvp.Value <= LOW_RESOURCE_THRESHOLD).Select(kvp => kvp.Key).ToList();
+        }
+    }
+    
+    [System.Serializable]
+    public struct ResourceInfo
+    {
+        public int current;
+        public int max;
+        public int cost;
+        public int dailyUsage;
+        public bool canAfford;
+        
+        public float Ratio => max > 0 ? (float)current / max : 0f;
+        public bool IsLow => current <= 3;
     }
 }
